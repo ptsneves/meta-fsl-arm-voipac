@@ -13,6 +13,7 @@ SRCBRANCH = "uboot-imx-v2015.04"
 SRCREV = "774cbf4de7fb17076a7ada21ed48cde0b590e246"
 UBOOT_SRC ?= "git://github.com/voipac/uboot-imx.git;protocol=git"
 SRC_URI = "${UBOOT_SRC};branch=${SRCBRANCH}"
+SRC_URI += "file://0002-Add-compiler-gcc7.h-header-file.patch"
 
 S = "${WORKDIR}/git"
 
